@@ -22,6 +22,10 @@ Le projet est un monorepo :
 - **Cache disque** : génération d’un PNG **par variable et par heure** dans `server/cache/`.
 - **Mode “offline” (sans backend)** : si des PNG existent déjà dans `server/cache/`, le client peut les charger via l’URL `/local-cache/...` servie par Vite.
 
+## previsualisation
+<img width="1168" height="902" alt="image" src="https://github.com/user-attachments/assets/456e86ef-6fcb-40f4-95d8-3abd32232649" />
+
+
 ## Structure des fichiers
 
 ### GRIB horaires (entrée)

@@ -1,0 +1,9 @@
+wgrib2 precip.grib2 -match ":WIND:10 m" -netcdf wind_10m.nc
+gdaldem color-relief wind_10m.nc palette.txt precip.png -alpha
+
+wgrib2 precip.grib2 -match ":TP:" -netcdf tp.nc
+gdaldem color-relief tp.nc palette.txt precip.png -alpha
+
+wgrib2 SP2.grib2 -match ":CAPE:" -netcdf cape.nc
+gdalwarp -t_srs EPSG:3857 cape.nc cape_3857.tif
+gdaldem color-relief cape_3857.tif palette.txt cape_color.png -alpha

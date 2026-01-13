@@ -1,0 +1,16 @@
+Depuis la racine :
+
+bash
+npm --prefix client run build
+Ou bien depuis c:\JS\precipitation\client :
+
+bash
+npm run build
+Le résultat est dans :
+
+client/dist/
+Build du backend
+Le serveur Express n’a pas de build (c’est juste node index.js). Tu peux juste le lancer avec :
+
+bash
+npm --prefix server run start
